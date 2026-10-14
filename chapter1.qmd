@@ -69,9 +69,7 @@ Examples are everywhere. An airline assigns crews to flights. A retailer process
 
 ### The growth of data
 
-The volume of data created in the world has grown exponentially. The market research firm IDC estimated the global *datasphere*, all data created, captured, and replicated in a year, at roughly 2 zettabytes in 2010 and 33 zettabytes in 2018, and projected about 175 zettabytes for 2025 (IDC, *Data Age 2025*, 2018; figures approximate). A zettabyte is one trillion gigabytes.
-
-More data is a double-edged sword. It creates opportunities: finer detail, longer histories, and questions that used to be unanswerable. It also creates **data overload**, where there is too much data to synthesize or interpret properly and the useful signal gets lost. The skill that matters most is not collecting more data but knowing which data actually answer the question at hand.
+The volume of data created in the world has grown exponentially. More data is a double-edged sword. It creates opportunities: finer detail, longer histories, and questions that used to be unanswerable. It also creates **data overload**, where there is too much data to synthesize or interpret properly and the useful signal gets lost. The skill that matters most is not collecting more data but knowing which data actually answer the question at hand.
 
 ### From data to decisions: the information value chain
 
