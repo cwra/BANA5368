@@ -345,23 +345,22 @@ The most important step is to ask *why* values are missing. The reason often mat
 
 ::: {.callout-tip appearance="simple" icon=false title="In Excel — Cleaning with formulas"}
 Put the formula in a helper column, fill it down, then copy the results and use Paste Special › Values to replace the original.
->
-> - `=TRIM(A2)` removes leading, trailing, and repeated spaces.
-> - `=CLEAN(A2)` removes non-printing characters that often come with imported data. `=TRIM(CLEAN(A2))` does both.
-> - `=PROPER(A2)`, `=UPPER(A2)`, `=LOWER(A2)` standardize capitalization.
-> - `=VALUE(A2)` converts a number stored as text into a number.
-> - `=SUBSTITUTE(A2,"-","")` replaces specific characters, here removing dashes.
+
+- `=TRIM(A2)` removes leading, trailing, and repeated spaces.
+- `=CLEAN(A2)` removes non-printing characters that often come with imported data. `=TRIM(CLEAN(A2))` does both.
+- `=PROPER(A2)`, `=UPPER(A2)`, `=LOWER(A2)` standardize capitalization.
+- `=VALUE(A2)` converts a number stored as text into a number.
+- `=SUBSTITUTE(A2,"-","")` replaces specific characters, here removing dashes.
 :::
 
 
 ::: {.callout-tip appearance="simple" icon=false title="In Excel — Cleaning with built-in features"}
->
-> - **Remove Duplicates** (Data tab) deletes repeated records.
-> - **Find and Replace** (Ctrl + H) fixes inconsistent labels in one pass.
-> - **Text to Columns** (Data tab) splits one field into several, such as a full name into first and last names.
-> - **Flash Fill** (Ctrl + E) completes a pattern after you type one or two examples.
-> - **Data Validation** (Data tab) restricts what can be entered in a cell, preventing errors at the source.
-> - **Filters** and **Conditional Formatting** make blanks, duplicates, and extreme values easy to spot.
+- **Remove Duplicates** (Data tab) deletes repeated records.
+- **Find and Replace** (Ctrl + H) fixes inconsistent labels in one pass.
+- **Text to Columns** (Data tab) splits one field into several, such as a full name into first and last names.
+- **Flash Fill** (Ctrl + E) completes a pattern after you type one or two examples.
+- **Data Validation** (Data tab) restricts what can be entered in a cell, preventing errors at the source.
+- **Filters** and **Conditional Formatting** make blanks, duplicates, and extreme values easy to spot.
 :::
 
 ### Excel essentials for analysis
