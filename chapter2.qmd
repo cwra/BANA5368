@@ -150,7 +150,7 @@ The remarkable part is the last clause. Individual call lengths are strongly rig
 
 @fig-clt shows the theorem at work. The left panel is the call-length process: very skewed, with a mean of 6 minutes and a standard deviation of 6 minutes. The other panels show 20,000 simulated sample means each, for samples of 2, 5, and 36 calls. As $n$ grows, the distribution of sample means narrows (the $\sqrt{n}$ law) and becomes bell-shaped (the CLT). By $n$ = 36 the normal curve the theorem predicts fits the simulated averages almost perfectly.
 
-![Sample means from a skewed process become normal as the sample size grows.](figs/clt_sim.png){#fig-clt fig-alt="Four histograms. The first shows individual call lengths, strongly right-skewed with most calls under 5 minutes and a long tail past 20 minutes. The next three show 20,000 simulated sample means for samples of 2, 5, and 36 calls. With 2 calls the averages are still skewed; with 5 they are less skewed; with 36 they form a narrow, symmetric bell centered at 6 minutes that matches the overlaid normal curve."}
+![Sample means from a skewed process become normal as the sample size grows.](chapter2_figs_clt_sim.png){#fig-clt fig-alt="Four histograms. The first shows individual call lengths, strongly right-skewed with most calls under 5 minutes and a long tail past 20 minutes. The next three show 20,000 simulated sample means for samples of 2, 5, and 36 calls. With 2 calls the averages are still skewed; with 5 they are less skewed; with 36 they form a narrow, symmetric bell centered at 6 minutes that matches the overlaid normal curve."}
 
 How large is "large enough"? There is no single cutoff, but these rules of thumb serve well in business work:
 
@@ -178,7 +178,7 @@ $$
 So in a typical year, the weekly average would exceed 7.5 minutes in about 3 or 4 weeks (52 × 0.0668 ≈ 3.5) purely by chance, with nothing wrong in the call center. A supervisor who reacts to every such week is reacting to noise. For contrast, about 28.7% of *individual* calls last longer than 7.5 minutes. Averages are much more stable than the values they average.
 :::
 
-![The sampling distribution of the mean call length for samples of 36 calls.](figs/norm_calls.png){#fig-calls fig-alt="Normal curve centered at 6 minutes with standard deviation 1 minute. The area to the right of 7.5 minutes is shaded and labeled P of x-bar greater than 7.5 equals 0.0668."}
+![The sampling distribution of the mean call length for samples of 36 calls.](chapter2_figs_norm_calls.png){#fig-calls fig-alt="Normal curve centered at 6 minutes with standard deviation 1 minute. The area to the right of 7.5 minutes is shaded and labeled P of x-bar greater than 7.5 equals 0.0668."}
 
 ::: {.callout-tip title="Example — Average order value"}
 An online retailer's individual order values are right-skewed with $\mu$ = \$82 and $\sigma$ = \$40. The analytics team computes the average of a random sample of $n$ = 64 orders each day. What is the probability that a day's sample average lands within \$4 of the true mean, that is, between \$78 and \$86?
@@ -192,7 +192,7 @@ $$
 Only about 58% of days will produce a sample average within \$4 of the truth. If management wants daily averages that are reliably within \$4, the sample of 64 orders is too small.
 :::
 
-![Probability that the average of 64 orders falls between \$78 and \$86.](figs/norm_orders.png){#fig-orders fig-alt="Normal curve centered at 82 dollars with standard deviation 5 dollars. The area between 78 and 86 dollars is shaded and labeled 0.5763."}
+![Probability that the average of 64 orders falls between \$78 and \$86.](chapter2_figs_norm_orders.png){#fig-orders fig-alt="Normal curve centered at 82 dollars with standard deviation 5 dollars. The area between 78 and 86 dollars is shaded and labeled 0.5763."}
 
 ::: {.callout-tip title="Example — Bottling line"}
 A filling machine puts an average of $\mu$ = 500 ml into each bottle, with a standard deviation of $\sigma$ = 4 ml. Every hour, quality control weighs a random sample of $n$ = 16 bottles and records the average fill. Fill volumes are approximately normal, so the sampling distribution of $\bar{x}$ is normal even though 16 is a small sample.
@@ -255,7 +255,7 @@ The weight is the more unusual measurement: two standard deviations below target
 The specifications standardize the same way. ±4 mm is $\pm 4/2 = \pm 2$ standard deviations, and ±15 g is $\pm 15/7.5 = \pm 2$ standard deviations. In standardized terms the two tolerances are identical, so (if both are normal) each dimension falls within specification 95.45% of the time.
 :::
 
-![One standard normal curve serves both dimensions.](figs/std_normal.png){#fig-std fig-alt="Standard normal curve with z from minus 4 to 4 and the area between minus 2 and 2 shaded, labeled 95.45 percent. Two extra scales below the z axis translate z into radius in millimeters (42 to 58, with 50 at z equals 0) and weight in grams (220 to 280, with 250 at z equals 0). A dot at z equals 1.5 marks a radius of 53 mm and a dot at z equals minus 2 marks a weight of 235 g."}
+![One standard normal curve serves both dimensions.](chapter2_figs_std_normal.png){#fig-std fig-alt="Standard normal curve with z from minus 4 to 4 and the area between minus 2 and 2 shaded, labeled 95.45 percent. Two extra scales below the z axis translate z into radius in millimeters (42 to 58, with 50 at z equals 0) and weight in grams (220 to 280, with 250 at z equals 0). A dot at z equals 1.5 marks a radius of 53 mm and a dot at z equals minus 2 marks a weight of 235 g."}
 
 ### The standard normal distribution
 
@@ -304,7 +304,7 @@ Return to the bottling line, where the true standard deviation of fill volumes i
 
 @fig-ssim answers by simulation. For samples of 5 bottles, the sample standard deviation ranges widely, from below 2 ml to above 6 ml. With 16 bottles it is tighter, and with 50 bottles tighter still. Like the sample mean, the sample standard deviation has a sampling distribution, and its spread shrinks as the sample grows. Unlike the sample mean's, its shape is not symmetric: it has a longer right tail, especially for small samples.
 
-![Sampling distributions of the sample standard deviation for samples of 5, 16, and 50 bottles.](figs/s_sim.png){#fig-ssim fig-alt="Three simulated distributions of the sample standard deviation, with a dotted line at the true value of 4 ml. For n equals 5 the distribution is wide and right-skewed, spreading from about 1 to 8 ml. For n equals 16 it is narrower, from about 2 to 6 ml. For n equals 50 it is a tall narrow peak from about 3 to 5 ml."}
+![Sampling distributions of the sample standard deviation for samples of 5, 16, and 50 bottles.](chapter2_figs_s_sim.png){#fig-ssim fig-alt="Three simulated distributions of the sample standard deviation, with a dotted line at the true value of 4 ml. For n equals 5 the distribution is wide and right-skewed, spreading from about 1 to 8 ml. For n equals 16 it is narrower, from about 2 to 6 ml. For n equals 50 it is a tall narrow peak from about 3 to 5 ml."}
 
 The center of the sampling distribution of $s^2$ is exactly $\sigma^2$: the sample variance is an unbiased estimator of the process variance. This is precisely why we divide by $n - 1$ rather than $n$ when we calculate $s^2$, as discussed in Unit 1. Dividing by $n$ would make the sample variance systematically too small.
 
@@ -331,7 +331,7 @@ The chi-square distribution has a few properties worth knowing:
 - Its mean equals its degrees of freedom, and its variance is twice its degrees of freedom.
 - As the degrees of freedom grow, it becomes more symmetric and more bell-shaped.
 
-![Chi-square distributions for 2, 5, 10, and 20 degrees of freedom.](figs/chisq_shapes.png){#fig-chishapes fig-alt="Four chi-square density curves. With 2 degrees of freedom the curve starts high at zero and falls steadily. With 5 it peaks near 3 and is strongly right-skewed. With 10 it peaks near 8 and is less skewed. With 20 it peaks near 18 and is nearly symmetric."}
+![Chi-square distributions for 2, 5, 10, and 20 degrees of freedom.](chapter2_figs_chisq_shapes.png){#fig-chishapes fig-alt="Four chi-square density curves. With 2 degrees of freedom the curve starts high at zero and falls steadily. With 5 it peaks near 3 and is strongly right-skewed. With 10 it peaks near 8 and is less skewed. With 20 it peaks near 18 and is nearly symmetric."}
 
 ::: {.callout-warning title="Normality matters here"}
 The chi-square result requires the process itself to be normally distributed, and, unlike the CLT for the mean, it does not become approximately true for large samples from non-normal processes. For skewed or heavy-tailed processes, chi-square probabilities about the variance can be badly wrong. Check a histogram of the data before relying on them.
@@ -351,7 +351,7 @@ $$
 About 7.5% of hourly samples will show a standard deviation of 5 ml or more even when nothing is wrong. One such reading is not alarming; a run of them would be.
 :::
 
-![Chi-square distribution with 15 degrees of freedom; the shaded area is the probability that s exceeds 5 ml.](figs/chisq_fill.png){#fig-chifill fig-alt="Chi-square density curve with 15 degrees of freedom, peaking near 13. The right tail beyond 23.44 is shaded and labeled 0.0753, equal to the probability that the sample standard deviation exceeds 5 ml."}
+![Chi-square distribution with 15 degrees of freedom; the shaded area is the probability that s exceeds 5 ml.](chapter2_figs_chisq_fill.png){#fig-chifill fig-alt="Chi-square density curve with 15 degrees of freedom, peaking near 13. The right tail beyond 23.44 is shaded and labeled 0.0753, equal to the probability that the sample standard deviation exceeds 5 ml."}
 
 ::: {.callout-tip title="Example — How much does s vary?"}
 Continue with the bottling line ($\sigma$ = 4 ml). Between which values will the middle 95% of sample standard deviations fall for samples of 16 bottles?
@@ -455,7 +455,7 @@ follows a **t distribution with $n - 1$ degrees of freedom**.
 - It is a family of distributions, one for each value of the degrees of freedom.
 - As the degrees of freedom grow, $s$ becomes a more reliable estimate of $\sigma$, and the t distribution gets closer and closer to the standard normal. With 30 degrees of freedom the two are already hard to tell apart in a picture; with several hundred they are practically identical.
 
-![The t distribution with 2, 5, and 30 degrees of freedom, compared with the standard normal.](figs/t_vs_normal.png){#fig-tnorm fig-alt="Four symmetric bell-shaped curves centered at zero. The standard normal is drawn dashed. The t curve with 30 degrees of freedom nearly coincides with it. The t curve with 5 degrees of freedom is slightly lower in the middle and higher in the tails. The t curve with 2 degrees of freedom is lowest in the middle and has the heaviest tails."}
+![The t distribution with 2, 5, and 30 degrees of freedom, compared with the standard normal.](chapter2_figs_t_vs_normal.png){#fig-tnorm fig-alt="Four symmetric bell-shaped curves centered at zero. The standard normal is drawn dashed. The t curve with 30 degrees of freedom nearly coincides with it. The t curve with 5 degrees of freedom is slightly lower in the middle and higher in the tails. The t curve with 2 degrees of freedom is lowest in the middle and has the heaviest tails."}
 
 How much does the normality assumption matter? Much less than it does for the chi-square result. Because the numerator of $T$ is a sample mean, the CLT is working in our favor, and t-based calculations are reasonably accurate for moderate sample sizes unless the process is strongly skewed or has extreme outliers. For small samples, look at the data first.
 
@@ -484,7 +484,7 @@ For the standard normal, 95% of values fall between −1.96 and 1.96. For the t 
 With a sample of 5, the cutoff is 42% farther out than the normal cutoff. With a sample of 100, the difference is small. These cutoffs will become the building blocks of confidence intervals in Unit 3.
 :::
 
-![The t value cutting off the middle 95% falls toward 1.96 as the degrees of freedom grow.](figs/t_crit.png){#fig-tcrit fig-alt="Line chart of the t value cutting off the middle 95 percent against degrees of freedom from 2 to 60. The curve starts above 4 at 2 degrees of freedom, drops steeply to 2.776 at 4 and 2.262 at 9, and flattens toward a dashed line at 1.96, reaching 2.045 at 29."}
+![The t value cutting off the middle 95% falls toward 1.96 as the degrees of freedom grow.](chapter2_figs_t_crit.png){#fig-tcrit fig-alt="Line chart of the t value cutting off the middle 95 percent against degrees of freedom from 2 to 60. The curve starts above 4 at 2 degrees of freedom, drops steeply to 2.776 at 4 and 2.262 at 9, and flattens toward a dashed line at 1.96, reaching 2.045 at 29."}
 
 ::: {.callout-tip title="Example — Time to proficiency"}
 An HR department claims that new analysts reach full proficiency in an average of $\mu$ = 20 working days. A manager tracks a random sample of $n$ = 10 recent hires and finds $\bar{x}$ = 22.4 days with $s$ = 3.1 days. If the HR claim is correct, how unusual is a sample average this high?
@@ -498,7 +498,7 @@ With 9 degrees of freedom, $P(T > 2.45) = 0.0184$. If the claim were true, a sam
 Had the manager used the standard normal instead, the probability would have come out as 0.0072, overstating how surprising the result is by a factor of about two and a half. With only 10 observations, ignoring the uncertainty in $s$ matters.
 :::
 
-![Probability of a T value above 2.45 with 9 degrees of freedom.](figs/t_train.png){#fig-ttrain fig-alt="t density curve with 9 degrees of freedom and a dashed standard normal curve for comparison. The area to the right of 2.45 under the t curve is shaded and labeled 0.0184. A note says the standard normal would give 0.0072."}
+![Probability of a T value above 2.45 with 9 degrees of freedom.](chapter2_figs_t_train.png){#fig-ttrain fig-alt="t density curve with 9 degrees of freedom and a dashed standard normal curve for comparison. The area to the right of 2.45 under the t curve is shaded and labeled 0.0184. A note says the standard normal would give 0.0072."}
 
 ::: {.callout-tip title="Example — Bottling line, with s"}
 Quality control at the bottling line now no longer assumes $\sigma$ = 4 ml. A sample of $n$ = 16 bottles has $\bar{x}$ = 497.9 ml and $s$ = 4.4 ml. If the machine is correctly set to $\mu$ = 500 ml, how likely is a sample mean at least this far below 500?
@@ -558,7 +558,7 @@ $$
 SE_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}
 $$
 
-![The standard deviation of a 0–1 variable depends only on p, and is largest at p = 0.5.](figs/sd_vs_p.png){#fig-sdp fig-alt="Arch-shaped curve of the standard deviation of a 0-1 variable against the proportion p, from 0 at p equals 0, rising to a maximum of 0.5 at p equals 0.5, and back to 0 at p equals 1. Marked points: a click rate of 0.031 with standard deviation 0.17, p of 0.5 with 0.50, and a recommend rate of 0.60 with 0.49."}
+![The standard deviation of a 0–1 variable depends only on p, and is largest at p = 0.5.](chapter2_figs_sd_vs_p.png){#fig-sdp fig-alt="Arch-shaped curve of the standard deviation of a 0-1 variable against the proportion p, from 0 at p equals 0, rising to a maximum of 0.5 at p equals 0.5, and back to 0 at p equals 1. Marked points: a click rate of 0.031 with standard deviation 0.17, p of 0.5 with 0.50, and a recommend rate of 0.60 with 0.49."}
 
 @fig-sdp shows the relationship. Variability is largest when the outcome is a coin flip ($p$ = 0.5) and shrinks toward zero for outcomes that almost always or almost never happen.
 
@@ -601,7 +601,7 @@ About 2% of a company's invoices contain an error. An auditor checks a random sa
 With a sample of 1,000 invoices, $np$ = 20 and the normal curve fits the distribution of $\hat{p}$ closely.
 :::
 
-![Distribution of the sample error rate when 2% of invoices contain errors, for samples of 100 and 1,000 invoices.](figs/phat_rare.png){#fig-rare fig-alt="Two panels. Left, samples of 100 invoices: the possible sample error rates form a few lumpy bars at 0, 1, 2, 3, 4, 5 and 6 percent, and the overlaid normal curve fits poorly and extends below 0 percent. Right, samples of 1,000 invoices: many thin bars form a smooth bell shape centered at 2 percent that the normal curve matches well."}
+![Distribution of the sample error rate when 2% of invoices contain errors, for samples of 100 and 1,000 invoices.](chapter2_figs_phat_rare.png){#fig-rare fig-alt="Two panels. Left, samples of 100 invoices: the possible sample error rates form a few lumpy bars at 0, 1, 2, 3, 4, 5 and 6 percent, and the overlaid normal curve fits poorly and extends below 0 percent. Right, samples of 1,000 invoices: many thin bars form a smooth bell shape centered at 2 percent that the normal curve matches well."}
 
 ### Using the normal distribution for proportions
 
@@ -625,7 +625,7 @@ $$
 $P(\hat{p} < 0.025) = 0.0608$. About one campaign in sixteen will come in below 2.5% even if the new email is exactly as good as the old ones. A marketing team that redesigns its emails after every weak result is chasing noise.
 :::
 
-![Sampling distribution of the click rate for samples of 2,000 emails.](figs/phat_email.png){#fig-email fig-alt="Normal curve centered at a click rate of 3.1 percent, spanning about 1.5 to 4.7 percent. The area below 2.5 percent is shaded and labeled 0.0608."}
+![Sampling distribution of the click rate for samples of 2,000 emails.](chapter2_figs_phat_email.png){#fig-email fig-alt="Normal curve centered at a click rate of 3.1 percent, spanning about 1.5 to 4.7 percent. The area below 2.5 percent is shaded and labeled 0.0608."}
 
 ::: {.callout-tip title="Example — Customer survey"}
 In the long run, 60% of a retailer's customers say they would recommend the store. Each month the retailer surveys $n$ = 150 random customers. Between which values will the middle 95% of monthly survey results fall?
