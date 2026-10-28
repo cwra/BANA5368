@@ -115,7 +115,7 @@ Two lines of this table, *Standard Error* and *Confidence Level*, cannot be inte
 
 The mean (\$102.44) is about \$20 higher than the median (\$82.40). That gap is a signal. A handful of large orders, up to \$367.91, pull the mean upward, while the median, the middle order, is unaffected by how large the largest orders are. @fig-hist shows the shape behind the numbers: most orders cluster between \$25 and \$100, with a long tail to the right.
 
-![Distribution of order values in the sample of 120 orders.](figs/hist_orders.png){#fig-hist fig-alt="Histogram of 120 order values in 25-dollar bins from 0 to 400 dollars. Most orders fall between 25 and 100 dollars, with the tallest bars between 50 and 100. A long right tail extends past 350 dollars. A dashed line marks the median at 82.40 dollars and a solid line marks the mean at 102.44 dollars, to the right of the median."}
+![Distribution of order values in the sample of 120 orders.](chapter3_figs_hist_orders.png){#fig-hist fig-alt="Histogram of 120 order values in 25-dollar bins from 0 to 400 dollars. Most orders fall between 25 and 100 dollars, with the tallest bars between 50 and 100. A long right tail extends past 350 dollars. A dashed line marks the median at 82.40 dollars and a solid line marks the mean at 102.44 dollars, to the right of the median."}
 
 Which number should a report use? It depends on the question:
 
@@ -201,7 +201,7 @@ The last column is a **row percentage**: the share of each row that falls in the
 
 A **Pareto analysis** sorts categories from largest to smallest and adds a running cumulative share, to show how concentrated a total is. The name refers to the "80/20" pattern found in many business settings, where a minority of products, customers, or causes accounts for most of the total. @fig-pareto shows Brazos's revenue by category: Camping and Footwear together bring in 68.9% of the revenue, and adding Apparel takes the total to 92.0%.
 
-![Pareto chart of sample revenue by product category.](figs/pareto_category.png){#fig-pareto fig-alt="Bar chart of the share of sample revenue by category, sorted from largest to smallest: Camping 37.6 percent, Footwear 31.3 percent, Apparel 23.1 percent, Accessories 8.0 percent. A line on a second axis shows the cumulative share rising to 68.9, 92.0, and 100 percent."}
+![Pareto chart of sample revenue by product category.](chapter3_figs_pareto_category.png){#fig-pareto fig-alt="Bar chart of the share of sample revenue by category, sorted from largest to smallest: Camping 37.6 percent, Footwear 31.3 percent, Apparel 23.1 percent, Accessories 8.0 percent. A line on a second axis shows the cumulative share rising to 68.9, 92.0, and 100 percent."}
 
 ### The average-of-averages trap
 
@@ -251,7 +251,7 @@ A **percentage point** is the unit for the arithmetic difference between two per
 
 @fig-rev shows Brazos's quarterly net sales. Comparing each quarter with the one before (quarter-over-quarter, QoQ) makes the first quarter of 2026 look like a disaster: sales fell 25.5% from the fourth quarter of 2025. But the fourth quarter includes the holiday season and is always Brazos's strongest. Comparing the first quarter of 2026 with the first quarter of 2025 (year-over-year, YoY) tells the real story: sales grew 8.7%.
 
-![Brazos Outfitters quarterly net sales, 2025 and 2026.](figs/rev_quarterly.png){#fig-rev fig-alt="Bar chart of quarterly net sales in thousands of dollars: Q1 2025 816, Q2 2025 903, Q3 2025 955, Q4 2025 1,190, Q1 2026 887, Q2 2026 987, Q3 2026 1,046. Each quarter of 2026 is above the same quarter of 2025, but Q1 2026 is well below Q4 2025."}
+![Brazos Outfitters quarterly net sales, 2025 and 2026.](chapter3_figs_rev_quarterly.png){#fig-rev fig-alt="Bar chart of quarterly net sales in thousands of dollars: Q1 2025 816, Q2 2025 903, Q3 2025 955, Q4 2025 1,190, Q1 2026 887, Q2 2026 987, Q3 2026 1,046. Each quarter of 2026 is above the same quarter of 2025, but Q1 2026 is well below Q4 2025."}
 
 | Quarter | Net sales (\$000) | QoQ change | YoY change |
 |---|---|---|---|
@@ -348,7 +348,7 @@ $$
 
 contains $\mu$ for exactly those samples whose mean landed in the middle 95% of the sampling distribution, which is 95% of all samples. @fig-cilogic illustrates. Each line below the curve is the interval from one sample. Samples whose mean falls inside the shaded middle 95% produce intervals that reach $\mu$; a sample in the tails produces an interval that misses.
 
-![Why the interval x̄ ± 1.96 SE captures μ in 95% of samples.](figs/ci_logic.png){#fig-cilogic fig-alt="Top panel: a normal sampling distribution centered at mu, with the middle 95 percent, between minus 1.96 and plus 1.96 standard errors, shaded. Bottom panel: four horizontal intervals, each centered at a sample mean and extending 1.96 standard errors either way. Three sample means fall inside the shaded region and their intervals cross mu. One sample mean falls at minus 2.4 standard errors and its interval, drawn in red, misses mu."}
+![Why the interval x̄ ± 1.96 SE captures μ in 95% of samples.](chapter3_figs_ci_logic.png){#fig-cilogic fig-alt="Top panel: a normal sampling distribution centered at mu, with the middle 95 percent, between minus 1.96 and plus 1.96 standard errors, shaded. Bottom panel: four horizontal intervals, each centered at a sample mean and extending 1.96 standard errors either way. Three sample means fall inside the shaded region and their intervals cross mu. One sample mean falls at minus 2.4 standard errors and its interval, drawn in red, misses mu."}
 
 ::: {.callout-note title="Definition — Confidence interval"}
 A **confidence interval** is an interval estimate calculated by a method that captures the process parameter in a stated percentage of all possible samples. That percentage is the **confidence level**. Most confidence intervals take the form
@@ -362,7 +362,7 @@ $$
 
 @fig-cisim shows the idea in a simulation. The process is a skewed order-value process with a true mean of \$97.51, which in real life we would not know. Each vertical line is a 95% confidence interval calculated from a different random sample of 30 orders. Most of the intervals cross the true mean; two of the fifty, drawn in red, miss it.
 
-![Fifty 95% confidence intervals from fifty random samples of 30 orders.](figs/ci_sim.png){#fig-cisim fig-alt="Fifty vertical intervals for the mean order value, each from a different random sample of 30 orders, plotted side by side. A dashed horizontal line marks the true mean of 97.51 dollars. The intervals vary in center and width. Forty-eight of them cross the dashed line; two, drawn in red, lie entirely below it."}
+![Fifty 95% confidence intervals from fifty random samples of 30 orders.](chapter3_figs_ci_sim.png){#fig-cisim fig-alt="Fifty vertical intervals for the mean order value, each from a different random sample of 30 orders, plotted side by side. A dashed horizontal line marks the true mean of 97.51 dollars. The intervals vary in center and width. Forty-eight of them cross the dashed line; two, drawn in red, lie entirely below it."}
 
 The picture shows how to interpret a confidence interval, and also how not to:
 
@@ -377,7 +377,7 @@ A good plain-English interpretation for a manager: *"Based on our sample, we are
 
 95% is the most common confidence level, but nothing is special about it. 90% and 99% are also widely used. The choice is a trade-off: to be more confident of capturing the parameter, the interval must be wider. @fig-levels shows the three levels for Brazos's mean order value.
 
-![90%, 95%, and 99% confidence intervals for the mean order value.](figs/ci_levels.png){#fig-levels fig-alt="Three horizontal intervals centered at 102.44 dollars. The 90 percent interval runs from 91.45 to 113.44 dollars, the 95 percent interval from 89.31 to 115.57 dollars, and the 99 percent interval from 85.08 to 119.80 dollars."}
+![90%, 95%, and 99% confidence intervals for the mean order value.](chapter3_figs_ci_levels.png){#fig-levels fig-alt="Three horizontal intervals centered at 102.44 dollars. The 90 percent interval runs from 91.45 to 113.44 dollars, the 95 percent interval from 89.31 to 115.57 dollars, and the 99 percent interval from 85.08 to 119.80 dollars."}
 
 A 100% confidence interval is always available, but it is useless: the average order value is somewhere between zero and infinity. A useful interval balances confidence against precision.
 
@@ -465,7 +465,7 @@ The margin of error $t^* \times s/\sqrt{n}$ has three ingredients, and each one 
 
 The square-root law from Unit 2 applies here too: to halve the margin of error, you need four times as much data. @fig-me shows how Brazos's margin of error for the mean order value would shrink with larger samples. Going from 120 to 480 orders cuts it from about \$13 to about \$6.50.
 
-![Margin of error for the mean order value at different sample sizes.](figs/me_vs_n.png){#fig-me fig-alt="Line chart of the margin of error for the mean order value against sample size from 20 to 1,000. The curve falls steeply at first and then flattens. A point at n equals 120 shows a margin of plus or minus 13.00 dollars and a point at n equals 480 shows plus or minus 6.50 dollars."}
+![Margin of error for the mean order value at different sample sizes.](chapter3_figs_me_vs_n.png){#fig-me fig-alt="Line chart of the margin of error for the mean order value against sample size from 20 to 1,000. The curve falls steeply at first and then flattens. A point at n equals 120 shows a margin of plus or minus 13.00 dollars and a point at n equals 480 shows plus or minus 6.50 dollars."}
 
 ### Planning the sample size
 
@@ -489,7 +489,7 @@ $$
 
 Descriptive reports slice data into groups, and each group's numbers deserve their own intervals. @fig-regions shows 95% confidence intervals for the average order value in each region.
 
-![95% confidence intervals for the mean order value, overall and by region.](figs/ci_regions.png){#fig-regions fig-alt="Five horizontal intervals for the mean order value. All orders, n equals 120: 89 to 116 dollars. Midwest, n equals 25: 67 to 117 dollars. Northeast, n equals 22: 85 to 153 dollars. South, n equals 48: 70 to 97 dollars. West, n equals 25: 92 to 178 dollars. The regional intervals are much wider than the overall interval."}
+![95% confidence intervals for the mean order value, overall and by region.](chapter3_figs_ci_regions.png){#fig-regions fig-alt="Five horizontal intervals for the mean order value. All orders, n equals 120: 89 to 116 dollars. Midwest, n equals 25: 67 to 117 dollars. Northeast, n equals 22: 85 to 153 dollars. South, n equals 48: 70 to 97 dollars. West, n equals 25: 92 to 178 dollars. The regional intervals are much wider than the overall interval."}
 
 | Region | $n$ | Mean | Std. dev. | $t^*$ | Margin of error | 95% CI |
 |---|---|---|---|---|---|---|
@@ -601,7 +601,7 @@ $$
 \chi^2_L \;\le\; \frac{(n-1)\,s^2}{\sigma^2} \;\le\; \chi^2_U
 $$
 
-![Chi-square distribution with 15 degrees of freedom; the middle 95% lies between 6.262 and 27.488.](figs/chisq_ci.png){#fig-chici fig-alt="Chi-square density curve with 15 degrees of freedom. The region between 6.262 and 27.488 is shaded and labeled middle 95 percent; each tail beyond these values holds 2.5 percent."}
+![Chi-square distribution with 15 degrees of freedom; the middle 95% lies between 6.262 and 27.488.](chapter3_figs_chisq_ci.png){#fig-chici fig-alt="Chi-square density curve with 15 degrees of freedom. The region between 6.262 and 27.488 is shaded and labeled middle 95 percent; each tail beyond these values holds 2.5 percent."}
 
 Solving both inequalities for $\sigma^2$ and taking square roots gives the interval.
 
