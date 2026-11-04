@@ -9,7 +9,6 @@ format:
     css: styles.css
   pdf:
     pdf-engine: lualatex
-    mainfont: "Source Sans 3"
     toc: true
 ---
 
